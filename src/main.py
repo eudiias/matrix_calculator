@@ -54,6 +54,9 @@ while True:
         case 5:
             result = MatrixOperations(matrixA, matrixB).add()
             DisplayMatrix(result).display()
+        case 6:
+            result = MatrixOperations(matrixA, matrixB).subtract()
+            DisplayMatrix(result).display()
         case 0:
             print("Exiting...")
             break

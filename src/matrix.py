@@ -22,8 +22,22 @@ class MatrixOperations:
         return result
 
     def subtract(self, other):
-        # Implementation for subtracting two matrices
-        pass
+        #Verifica se as matrizes têm as mesmas dimensões antes de realizar a subtração
+        if len(self._matrixA) != len(self._matrixB) :
+            raise ValueError("Matrices must have the same dimensions for subtraction.")
+        if len(self._matrixA[0]) != len(self._matrixB[0]):
+            raise ValueError("Matrices must have the same dimensions for subtraction.")
+
+        # Calcula a subtração das duas matrizes
+        result = []
+        for i in range(len(self._matrixA)):
+            row = []
+            for j in range(len(self._matrixA[i])):
+                row.append(self._matrixA[i][j] - self._matrixB[i][j])
+            result.append(row)
+
+        #Retorna a matriz resultante da subtração
+        return result
 
     def multiply(self, other):
         # Implementation for multiplying two matrices
