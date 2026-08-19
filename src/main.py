@@ -1,4 +1,5 @@
 from display_matrix import DisplayMatrix
+from matrix import MatrixOperations
 
 
 # Cria uma função para criar a matriz com base no número 
@@ -50,6 +51,9 @@ while True:
             DisplayMatrix(matrixA).display()
         case 4:
             DisplayMatrix(matrixB).display()
+        case 5:
+            result = MatrixOperations(matrixA, matrixB).add()
+            DisplayMatrix(result).display()
         case 0:
             print("Exiting...")
             break
