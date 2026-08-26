@@ -39,7 +39,7 @@ while True:
     print("7. Multiply matrices A and B")
     print("8. Multiply matrix A by a scalar")
     print("9. Transpose matrix A")
-    print("10. Exit\n")
+    print("0. Exit\n")
     option = int(input("Select an option: "))
 
     match option:
@@ -56,6 +56,16 @@ while True:
             DisplayMatrix(result).display()
         case 6:
             result = MatrixOperations(matrixA, matrixB).subtract()
+            DisplayMatrix(result).display()
+        case 7:
+            result = MatrixOperations(matrixA, matrixB).multiply()
+            DisplayMatrix(result).display()
+        case 8:
+            scalar = int(input("Qual é o numero Scalar?: "))
+            result = MatrixOperations(matrixA).scalar_multiply(scalar)
+            DisplayMatrix(result).display()
+        case 9:
+            result = MatrixOperations(matrixA).transpose()
             DisplayMatrix(result).display()
         case 0:
             print("Exiting...")
