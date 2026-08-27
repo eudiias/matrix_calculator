@@ -1,10 +1,7 @@
 class MatrixOperations:
-    def __init__(self, matrixA, matrixB):
+    def __init__(self, matrixA, matrixB=None):
         self._matrixA = matrixA
         self._matrixB = matrixB
-
-    def __init__(self, matrixA):
-        self._matrixA = matrixA
 
     def add(self):
         #Verifica se as matrizes têm as mesmas dimensões antes de realizar a adição
