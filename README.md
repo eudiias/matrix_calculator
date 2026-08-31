@@ -132,10 +132,11 @@ O projeto **não possui testes automatizados** (não há arquivos de teste, fram
 | `Error: Matrices must have the same dimensions for addition/subtraction.` | Tentativa de somar/subtrair matrizes A e B com dimensões diferentes | Crie as matrizes A e B com o mesmo número de linhas e colunas |
 | `Error: Incompatible matrix dimensions for multiplication.` | O número de colunas de A é diferente do número de linhas de B | Ajuste as dimensões das matrizes conforme a regra de multiplicação matricial (colunas de A = linhas de B) |
 
-## AUTORES:
-
-Carlos Dias de Oliveira Nascimento
-Kauan Bruno Ferreira
-Fernando Fogaça
 | `NameError: name 'matrixA' is not defined` (ou `matrixB`) | Tentativa de exibir ou operar uma matriz antes de criá-la (ex.: escolher a opção 3 sem antes usar a opção 1) | Crie a matriz A (opção 1) e/ou B (opção 2) antes de usar as opções que dependem delas |
 | `SyntaxError` relacionado a `match`/`case` ao rodar o programa | Uso de uma versão do Python anterior à 3.10 | Atualize para Python 3.10 ou superior |
+
+## AUTORES:
+
+# Carlos Dias de Oliveira Nascimento
+# Kauan Bruno Ferreira
+# Fernando Fogaça
